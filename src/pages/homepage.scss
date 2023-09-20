@@ -1,0 +1,411 @@
+.home{
+  width: 100%;
+  //height: 100vh;
+
+gap:88px;
+}
+
+
+
+.mw{
+  width: 944px;
+}
+
+.gap88{
+  gap:88px;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &-col{
+    flex-direction: column;
+  }
+}
+
+.main-pic{
+  //是否需要换成vh？
+  height: 388px;
+  //overflow: hidden;
+}
+
+.sec1{
+  gap:20px;
+  //是否需要换成vh？
+  padding:188px 0 88px;
+  &-lf{
+    flex: 1 0 0;
+
+    height:388px;
+  }
+  &-rg{
+    flex: 1 0 0;
+    align-items: flex-start;
+    gap:24px;
+  & div{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    width: 100%;
+    & button{
+      font-size:18px;
+    }
+  }
+  }
+
+}
+.sec2{
+  gap:24px;
+  align-items: flex-start;
+  & div{
+    gap:12px;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.fz-18{
+  font-size: 18px;
+}
+.fz-24{
+  font-size:24px;
+}
+.fz-12{
+  font-size: 12px;
+}
+canvas {
+  background-color: black !important;
+}
+
+.search{
+  align-items: center !important;
+
+  border-radius: 24px 10px 10px 24px;
+  border: 1px solid var(--app-primary-1);
+  box-sizing: content-box;
+
+  &-icon{
+    margin-left: -2px;
+    max-width: 50px;
+    padding:12px 0;
+    border-radius: 24px;
+    border: 0.686px solid var(--app-primary-2);
+    background: var(--app-primary-1);
+
+  }
+
+  & input{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    &::placeholder{
+      font-family: 'Space Grotesk';
+      color: var(--text-primary-2);
+      line-height: 100%;
+    }
+
+  }
+  & button{
+    font-size: 16px;
+  }
+}
+
+.sec3{
+  //vh
+  padding:188px 0;
+  gap:28px;
+}
+.gold-price{
+  gap:24px;
+}
+.price{
+  width: 412px;
+  padding:10% 0;
+  color: #D0A02B;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 32px */
+
+  & svg{
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.connect-wallet{
+  flex: 1;
+  & button{
+    font-size:16px;
+  }
+}
+.price-row{
+  width: 100%;
+  gap:52px;
+  & div{
+    flex:1;
+    gap:8px;
+    & svg{
+      width:24px;
+      height:24px;
+    }
+  }
+}
+
+.sec4{
+  padding-bottom:88px;
+  gap:88px;
+  justify-content:flex-start;
+  & .lf{
+    min-width: 364.244px;
+    //height: 551.927px;
+    & img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & .rg{
+    gap:12px;
+    align-items: flex-start;
+    padding: 0 64px;
+  }
+
+}
+.lh-150p{
+  line-height: 150%;
+}
+
+
+.sec5{
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap:88px;
+  column-gap: 88px;
+  padding-bottom: 88px;
+  & div{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:12px;
+    & h4{
+      font-size: 18px;
+    }
+    & p{
+      font-size: 12px;
+      line-height: 150%;
+    }
+  }
+}
+.colre{
+  gap:88px;
+}
+@media screen and (max-width: 1024px){
+  .mw{
+    width: 921px;
+  }
+  .sec5 {
+    //row-gap:44px;
+    column-gap: 44px;
+    & div{
+      width: 45%;
+    }
+  }
+}
+@media screen and (max-width: 922px){
+  .home{
+    gap:13.33vw;
+  }
+  .mw{
+    width: 71.7vw;
+  }
+  .sec1{
+    flex-direction: column;
+    padding:12vw 0 0 0;
+    gap:5.12vw;
+    &-rg{
+      gap:5.12vw;
+      & div{
+        gap:2.05vw;
+      }
+    }
+  }
+  .connect-wallet{
+    & button{
+      width: 100%;
+    }
+  }
+  .sec2{
+    & div{
+      flex-direction: column;
+      gap:2.05vw;
+      & div{
+        flex-direction: row;
+      }
+    }
+  }
+  .sec3{
+    padding:0;
+    gap:10.17px;
+  }
+  .sec4{
+    gap:0;
+  }
+  .sec4 .lf{
+    position: relative;
+    min-width:74.2vw;
+    height: 105.79vw;
+    & div{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      background:transparent;
+      border-radius: 1000px;
+    }
+    & img{
+     position: absolute;
+     left: 4%;
+     transform: scale(1.06);
+     width: 92%;
+     height: 98%;
+      //box-shadow:0 0 30px 100000px rgba(255,255,255,.7) inset;
+    }
+  }
+  .price-row{
+    flex-direction: column;
+    gap:13.33vw;
+  }
+  .sec4{
+    flex-direction: column;
+    padding-bottom:0;
+    & .rg{
+      padding:0;
+    }
+  }
+  .sec5 {
+    row-gap: 13.33vw;
+    padding-bottom: 13.33vw;
+    & div{
+      width: 100%;
+    }
+  }
+  .colre{
+    flex-direction: column-reverse;
+    gap:13.33vw;
+    & .sec2{
+      gap:3.07vw;
+    }
+  }
+  .sec1-lf{
+    height: fit-content;
+  }
+  .main-pic{
+    //width: 44.61vw;
+    //height: auto;
+  }
+  .gold-price{
+    gap:4.61vw;
+  }
+  .price{
+    width:45vw;
+    padding:5vw 0;
+    & svg{
+      width:45vw;
+    }
+  }
+  .search{
+    border-radius: 3.58vw 2.56vw 2.56vw 3.58vw;
+    & button{
+      align-self: stretch;
+    }
+    &-icon{
+      //padding:1.05vw 0;
+      padding:2.05vw;
+      align-self: stretch;
+      max-width: fit-content;
+      border-radius:3.58vw;
+      //max-width: 7.17vw;
+      text-align: center;
+
+      & svg{
+        width:3.07vw;
+        height: 3.07vw;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:480px){
+  .sec1{
+    &-rg div button{
+     font-size: 12px;
+    }
+  }
+
+  .sec2{
+    & div .fz-18{
+      font-size: 8px;
+    }
+  }
+
+  .sec3{
+    & .price-row .flexbox .fz-18{
+      font-size: 10px;
+    }
+  }
+
+  .sec4{
+    & h1{
+      font-size: 12px;
+    }
+  }
+
+  .sec5{
+    & div{
+      & h4{
+        font-size:12px;
+      }
+      & p{
+        font-size: 8px;
+      }
+    }
+  }
+  .price{
+    font-size: 16px;
+  }
+  .search {
+    & input,
+    & button{
+      font-size: 8px;
+    }
+
+  }
+  .connect-wallet button{
+    font-size: 8px;
+  }
+
+  .fz-18{
+    font-size: 12px;
+  }
+  .fz-24{
+    font-size:14px;
+  }
+  .fz-12{
+    font-size: 8px;
+  }
+
+}
+
+.spline-canvas {
+  zoom: 1; /* 禁止放大缩小 */
+  transform: scale(1); /* 禁止放大缩小 */
+}

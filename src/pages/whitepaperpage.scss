@@ -1,0 +1,23 @@
+.whitepaper{
+   padding:92px 0 120px;
+   display: flex;
+   justify-content: center;
+   & div{
+      max-width: 1464px;
+      display: flex;
+      gap:24px;
+   }
+
+   &-nav{
+      width: 360px;
+      display: flex;
+
+      background: var(--app-primary-1);
+      border:var(--app-primary-2)
+
+   }
+   &-article{
+
+   }
+
+}
